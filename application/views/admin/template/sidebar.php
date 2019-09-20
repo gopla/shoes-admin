@@ -46,7 +46,7 @@ to get the desired effect
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-           <a href="<?php echo base_url().'admin/home' ?>" class="nav-link active" id="navHome">
+           <a href="<?php echo base_url().'admin/home' ?>" class="nav-link" id="navHome">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -54,7 +54,7 @@ to get the desired effect
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link" id="navData">
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Data
@@ -63,7 +63,7 @@ to get the desired effect
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/tables/simple.html" class="nav-link">
+                <a href="<?php echo base_url().'admin/kamar' ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Kamar</p>
                 </a>

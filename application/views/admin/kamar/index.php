@@ -30,15 +30,15 @@
               <table id="tabel" class="table table-bordered">
                 <thead>
                 <tr>
-                  <th>Nama</th>
                   <th>No Kamar</th>
+                  <th>Tipe</th>
                 </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($kumpulanPemesanan as $psn): ?>
+                    <?php foreach($kumpulanKamar as $kmr): ?>
                       <tr>
-                        <td><?php echo $psn['nama'] ?></td>
-                        <td><?php echo $psn['no_kamar'] ?></td>
+                        <td><?php echo $kmr['no_kamar'] ?></td>
+                        <td><?php echo $kmr['tipe'] ?></td>
                       </tr>
                     <?php endforeach ?>
                 </tbody>
