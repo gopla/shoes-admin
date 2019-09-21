@@ -41,8 +41,8 @@
 	        <ul class="navbar-nav ml-auto">
 	        	<li class="nav-item"><a href="<?= base_url().'user/home' ?>" class="nav-link" style="font-size:0.8rem">Home</a></li>
 	        	<li class="nav-item"><a href="<?= base_url().'user/service' ?>" class="nav-link" style="font-size:0.8rem">Services</a></li>
-	        	<li class="nav-item"><a href="<?= base_url().'user/about' ?>" class="nav-link" style="font-size:0.8rem">About</a></li>
-	        	<li class="nav-item"><a href="<?= base_url().'user/book' ?>" class="nav-link" style="font-size:0.8rem">Book</a></li>
+	        	<li class="nav-item"><a href="<?= base_url().'user/about' ?>" class="nav-link" style="font-size:0.8rem">Contact</a></li>
+	        	<li class="nav-item"><a href="<?= base_url().'user/book' ?>" class="nav-link" style="font-size:0.8rem">Gallery</a></li>
 	        </ul>
 	      </div>
 	    </div>
