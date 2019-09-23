@@ -63,8 +63,13 @@ to get the desired effect
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
+<<<<<<< HEAD
                 <a href="<?php echo base_url().'admin/kamar' ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
+=======
+                <a href="pages/tables/simple.html" class="nav-link">
+                  <i class="fas fa-hotel nav-icon"></i>
+>>>>>>> a5cd686750b3465dccc587c72e8468aec9505e8b
                   <p>Kamar</p>
                 </a>
               </li>
