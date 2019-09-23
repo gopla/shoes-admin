@@ -1,53 +1,35 @@
-<section id="home-section" class="hero" style="background-color: #fff;" data-stellar-background-ratio="0.5">
-	<div class="home-slider owl-carousel">
-		<div class="slider-item js-fullheight">
-			<div class="overlay"></div>
-			<div class="container p-0">
-				<div class="row d-md-flex no-gutters slider-text justify-content-start" data-scrollax-parent="true">
-					<img class="one-forth"
-						src="https://images.pexels.com/photos/545034/pexels-photo-545034.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-						alt="">
-					<div class="one-forth d-flex align-items-center ftco-animate"
-						data-scrollax=" properties: { translateY: '0%' }">
-						<div class="text mt-5">
-							<span class="subheading">Belle Crown Hotels</span>
-							<h1 class="mb-4">Get Some View</h1>
-							<p class="mb-4">There is a good places to get some beautiful view from your outside room</p>
-
-							<p><a href="#" class="btn btn-primary py-3 px-4 font-weight-bold">Discover Now</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="slider-item js-fullheight">
-			<div class="overlay"></div>
-			<div class="container p-0">
-				<div class="row d-flex no-gutters slider-text" data-scrollax-parent="true">
-					<img class=""
-						src="https://images.pexels.com/photos/707581/pexels-photo-707581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-						alt="">
-						<div class="one-forth d-flex align-items-center ftco-animate"
-						data-scrollax=" properties: { translateY: '0%' }">
-						
-						<div style="width:80px;height:120px;border:5px solid black;transform:translate(40px,-155px)"></div>
-						
-						<div style="transform:translate(-43px,25px)">
-							<span class="subheading">Belle Crown Hotels</span>
-							<h1 class="mb-4">Get Some View</h1>
-							<p class="mb-4">There is a good places to get some beautiful view from your outside room</p>
-
-							<p><a href="#" class="btn btn-light py-3 px-4 font-weight-bold ml-1">Discover Now</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="h-25 d-inline-block" style="width:100%" src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="First slide">
+		<div class="carousel-caption d-none d-md-block">
+		<h5>...</h5>
+		<p>...</p>
+  	</div>
 	</div>
-</section>
+    <div class="carousel-item">
+      <img class="h-25 d-inline-block" style="width:100%" src="https://images.pexels.com/photos/573552/pexels-photo-573552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Second slide">
+		<div class="carousel-caption d-none d-md-block">
+		<h5>...</h5>
+		<p>...</p>
+  	</div>
+	</div>
+    <div class="carousel-item">
+      <img class="h-25 d-inline-block" style="width:100%" src="https://images.pexels.com/photos/2883048/pexels-photo-2883048.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Third slide">
+		<div class="carousel-caption d-none d-md-block">
+		<h5>...</h5>
+		<p>...</p>
+  	</div>
+	</div>
+  </div>
+</div>
 
-<section class="ftco-section ftco-no-pb ftco-no-pt">
+<section class="ftco-section ftco-no-pb ftco-no-pt mt-3">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 d-flex">
@@ -75,7 +57,7 @@
 	</div>
 </section>
 
-<section class="ftco-section ftco-pricing">
+<section class="ftco-section ftco-pricing mt-3">
 	<div class="container">
 		<div class="row justify-content-center pb-3">
 			<div class="col-md-10 heading-section text-center ftco-animate">

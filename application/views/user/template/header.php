@@ -31,18 +31,18 @@
   <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a style = "font-size:1.4rem" class="navbar-brand" href="index.html">Belle Crown</a>
+	    <div class="d-flex flex-row justify-content-around w-100 mt-2" style="margin-left:10rem;margin-right:10rem;">
+	      <a style = "font-size:1.6rem;color:#f121f12" class="navbar-brand" href="home">Belle Crown</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	        	<li class="nav-item"><a href="<?= base_url().'user/home' ?>" class="nav-link" style="font-size:0.8rem">Home</a></li>
-	        	<li class="nav-item"><a href="<?= base_url().'user/service' ?>" class="nav-link" style="font-size:0.8rem">Services</a></li>
-	        	<li class="nav-item"><a href="<?= base_url().'user/about' ?>" class="nav-link" style="font-size:0.8rem">Contact</a></li>
-	        	<li class="nav-item"><a href="<?= base_url().'user/book' ?>" class="nav-link" style="font-size:0.8rem">Gallery</a></li>
+	        	<li class="nav-item"><a href="<?= base_url().'user/home' ?>" class="nav-link" style="font-size:0.85rem">Home</a></li>
+	        	<li class="nav-item"><a href="<?= base_url().'user/service' ?>" class="nav-link" style="font-size:0.85rem">Services</a></li>
+	        	<li class="nav-item"><a href="<?= base_url().'user/about' ?>" class="nav-link" style="font-size:0.85rem">Contact</a></li>
+	        	<li class="nav-item"><a href="<?= base_url().'user/book' ?>" class="nav-link" style="font-size:0.85rem">Gallery</a></li>
 	        </ul>
 	      </div>
 	    </div>
