@@ -9,6 +9,7 @@
             $this->load->view('user/template/header');
             $this->load->view('user/service/index');
             $this->load->view('user/template/footer');
+            
         }
     
     }
