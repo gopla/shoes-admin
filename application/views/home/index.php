@@ -16,38 +16,75 @@
     <div class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col">
-            <div class="card">
-              <div class="card-header border-1">
-                <div class="d-flex justify-content-between">
-                  <h3 class="card-title">Pemesanan Kamar</h3>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex">
-                  <p class="d-flex flex-column">
-                    <span class="text-bold text-lg"></span>
-                    <span>Semua Data Pemesanan</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
 
-                <div class="position-relative mb-4">
-                  <canvas id="visitors-chart" height="200"></canvas>
-                </div>
+          <?php foreach ($dataTrans as $data) : ?>
+            <div class="col-lg-3 col-6">
+              <!-- small box -->
+              <div class="small-box bg-success">
+                <div class="inner">
+                  <h3><?= $data['count'] ?></h3>
 
-                <div class="d-flex flex-row justify-content-end">
-                  <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> Minggu Ini
-                  </span>
-
-                  <span>
-                    <i class="fas fa-square text-gray"></i> Minggu Lalu
-                  </span>
+                  <p>Transaksi</p>
                 </div>
+                <div class="icon">
+                  <i class="ion ion-cash"></i>
+                </div>
+                <a href="#" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
-          </div>
+            <!-- ./col -->
+          <?php endforeach ?>
+          <?php foreach ($dataSepatu as $data) : ?>
+            <div class="col-lg-3 col-6">
+              <!-- small box -->
+              <div class="small-box bg-info">
+                <div class="inner">
+                  <h3><?= $data['count'] ?></h3>
+
+                  <p>Sepatu</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-ios-paw"></i>
+                </div>
+                <a href="<?= base_url() . 'sepatu' ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+              </div>
+            </div>
+            <!-- ./col -->
+          <?php endforeach ?>
+          <?php foreach ($dataUser as $data) :  ?>
+            <div class="col-lg-3 col-6">
+              <!-- small box -->
+              <div class="small-box bg-warning">
+                <div class="inner">
+                  <h3><?= $data['count'] ?></h3>
+
+                  <p>User</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-person-stalker"></i>
+                </div>
+                <a href="#" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+              </div>
+            </div>
+            <!-- ./col -->
+          <?php endforeach ?>
+          <?php foreach ($dataRetail as $data) : ?>
+            <div class="col-lg-3 col-6">
+              <!-- small box -->
+              <div class="small-box bg-danger">
+                <div class="inner">
+                  <h3><?= $data['count'] ?></h3>
+
+                  <p>Retail</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-android-map"></i>
+                </div>
+                <a href="<?= base_url() . 'retail' ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+              </div>
+            </div>
+            <!-- ./col -->
+          <?php endforeach ?>
         </div>
         <!-- /.row -->
       </div>

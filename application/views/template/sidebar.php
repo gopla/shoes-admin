@@ -23,7 +23,10 @@ to get the desired effect
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
         <!-- <li class="nav-item d-none d-sm-inline-block"> -->
-        <a href="<?php echo base_url() . 'admin/home' ?>" class="btn btn-outline-light">Logout</a>
+        <a href="<?php echo base_url() . 'admin/home' ?>" class="btn btn-outline-light">
+          <i class="ion ion-log-out"></i>
+          Logout
+        </a>
         <!-- </li> -->
       </ul>
     </nav>
@@ -45,7 +48,7 @@ to get the desired effect
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-              <a href="<?php echo base_url() . 'admin/home' ?>" class="nav-link" id="navHome">
+              <a href="<?php echo base_url() . 'home' ?>" class="nav-link" id="navHome">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
                   Dashboard

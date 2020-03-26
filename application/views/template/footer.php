@@ -48,8 +48,8 @@
       $("#navRetail").addClass("active");
     } else if (path.match(/sepatu.*/)) {
       $("#navSepatu").addClass("active");
-    } else {
-      $("#navData").addClass("active");
+    } else if (path.match(/home.*/)) {
+      $("#navHome").addClass("active");
     }
   });
 </script>
