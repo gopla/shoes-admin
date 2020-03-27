@@ -72,7 +72,7 @@ to get the desired effect
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?php echo base_url() . 'admin/pemesanan' ?>" class="nav-link" id="navPemesanan">
+              <a href="<?php echo base_url() . 'user' ?>" class="nav-link" id="navUser">
                 <i class="fa fa-user nav-icon"></i>
                 <p>
                   User
