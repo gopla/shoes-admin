@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+
+  <?php
+  if (empty($this->session->flashdata('token'))) {
+    $this->session->set_flashdata('pesan', 'Email / Password tidak sesuai!');
+    redirect('home/login');
+  } else {
+    $token = $this->session->flashdata('token');
+  }
+  ?>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">

@@ -23,7 +23,7 @@ to get the desired effect
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
         <!-- <li class="nav-item d-none d-sm-inline-block"> -->
-        <a href="<?php echo base_url() . 'admin/home' ?>" class="btn btn-outline-light">
+        <a href="<?php echo base_url() . 'home/logout' ?>" class="btn btn-outline-light">
           <i class="ion ion-log-out"></i>
           Logout
         </a>
@@ -37,7 +37,7 @@ to get the desired effect
       <!-- Brand Logo -->
       <a href="<?php echo base_url() . 'admin/home' ?>" class="brand-link">
         <img src="<?php echo base_url() . 'assets/dist/img/AdminLTELogo.png' ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">didas</span>
+        <span class="brand-text font-weight-light">Adidas WebAdmin</span>
       </a>
 
       <!-- Sidebar -->
@@ -80,7 +80,7 @@ to get the desired effect
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?php echo base_url() . 'admin/pemesanan' ?>" class="nav-link" id="navPemesanan">
+              <a href="<?php echo base_url() . 'transaksi' ?>" class="nav-link" id="navPemesanan">
                 <i class="fas fa-piggy-bank nav-icon"></i>
                 <p>
                   Transaksi

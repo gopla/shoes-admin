@@ -63,7 +63,7 @@
                 <div class="icon">
                   <i class="ion ion-person-stalker"></i>
                 </div>
-                <a href="#" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="<?= base_url() . 'user' ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->
@@ -71,7 +71,7 @@
           <?php foreach ($dataRetail as $data) : ?>
             <div class="col-lg-3 col-6">
               <!-- small box -->
-              <div class="small-box bg-danger">
+              <div class="small-box bg-secondary">
                 <div class="inner">
                   <h3><?= $data['count'] ?></h3>
 
@@ -87,6 +87,38 @@
           <?php endforeach ?>
         </div>
         <!-- /.row -->
+
+        <!-- Main row -->
+        <div class="row">
+          <div class="col">
+
+            <!-- solid sales graph -->
+            <div class="card bg-gradient-primary">
+              <div class="card-header border-0">
+                <h3 class="card-title">
+                  <i class="fas fa-th mr-1"></i>
+                  Penjualan Bulan Ini
+                </h3>
+              </div>
+              <div class="card-body">
+                <canvas class="chart" id="line-chart" style="height: 250px;"></canvas>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer bg-transparent">
+                <div class="row">
+                  <div class="col-4 text-center">
+
+                  </div>
+                  <!-- ./col -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- /.card-footer -->
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.row (main row) -->
       </div>
       <!-- /.container-fluid -->
     </div>
