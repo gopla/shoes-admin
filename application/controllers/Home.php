@@ -15,15 +15,13 @@ class Home extends CI_Controller
 
   public function index()
   {
-    $token = $this->session->flashdata('token');
+    $token = $this->session->userdata('token');
 
     $data['title'] = "Dashboard | Adidas Web Admin";
     $data['dataTrans'] = $this->HomeModel->getTrans($token);
     $data['dataUser'] = $this->HomeModel->getUser($token);
     $data['dataSepatu'] = $this->HomeModel->getSepatu($token);
     $data['dataRetail'] = $this->HomeModel->getRetail($token);
-
-    $this->session->set_flashdata('token', $token);
 
     $this->load->view('template/header', $data);
     $this->load->view('template/sidebar');
@@ -40,7 +38,7 @@ class Home extends CI_Controller
 
     if ($this->form_validation->run() == TRUE) {
       $data['login'] = $this->HomeModel->auth();
-      $this->session->set_flashdata('token', $data['login']['token']);
+      $this->session->set_userdata('token',  $data['login']['token']);
       redirect('home');
     } else {
       $this->load->view('home/login', $data);

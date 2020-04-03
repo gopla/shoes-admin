@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<?php
+if ($this->session->userdata('token') == null) {
+  $this->session->set_flashdata('pesan', 'Login untuk Akses!');
+  redirect('home/login');
+}
+?>
 
-  <?php
-  if (empty($this->session->flashdata('token'))) {
-    $this->session->set_flashdata('pesan', 'Email / Password tidak sesuai!');
-    redirect('home/login');
-  } else {
-    $token = $this->session->flashdata('token');
-  }
-  ?>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
