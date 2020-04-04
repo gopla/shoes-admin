@@ -120,7 +120,7 @@
           }],
           yAxes: [{
             ticks: {
-              stepSize: 200000,
+              stepSize: 5000000,
               fontColor: '#efefef',
             },
             gridLines: {

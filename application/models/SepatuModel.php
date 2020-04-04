@@ -20,10 +20,14 @@ class SepatuModel extends CI_Model
   }
 
 
-  public function get()
+  public function get($token)
   {
     try {
-      $res = $this->_client->request('GET', 'sepatu');
+      $res = $this->_client->request('GET', 'sepatu', [
+        'headers' => [
+          'authorization' => "bearerHeader " . $token
+        ]
+      ]);
       return json_decode($res->getBody()->getContents(), true);
     } catch (\GuzzleHttp\Exception\ClientException $e) {
       echo $e->getResponse()->getBody()->getContents();
