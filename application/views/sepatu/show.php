@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Sepatu</h1>
+            <h1 class="m-0 text-dark"><i class="ion ion-ios-paw"></i> Sepatu</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -24,47 +24,45 @@
                 </div>
               </div>
               <!-- Tabel -->
-              <div class="card">
-                <!-- /.card-header -->
-                <?php
-                foreach ($datas as $data) : ?>
-                  <div class="card-body">
-                    <h2><?= $data['nama'] ?></h2>
-                    <div class="container float-left" style="width:50%">
-                      <img src="<?= base_url() . 'downloads/sepatu/' . $gambar ?>">
-                    </div>
-                    <div class="container float-right" style="width:50%">
-                      <table class="table">
-                        <tr>
-                          <th>Harga</th>
-                          <td>Rp.<?= number_format($data['harga']) ?></td>
-                        </tr>
-                        <tr>
-                          <th>Tipe</th>
-                          <td><?= $data['tipe'] ?></td>
-                        </tr>
-                        <tr>
-                          <th>Gender</th>
-                          <td><?= $data['gender'] ?></td>
-                        </tr>
-                        <tr>
-                          <th>Ukuran</th>
-                          <td><?= $data['ukuran'] ?></td>
-                        </tr>
-                        <tr>
-                          <th>Stok</th>
-                          <td><?= $data['stok'] ?></td>
-                        </tr>
-                        <tr>
-                          <th>Deskripsi</th>
-                          <td><?= $data['deskripsi'] ?></td>
-                        </tr>
-                      </table>
-                    </div>
-                  <?php endforeach ?>
+              <!-- /.card-header -->
+              <?php
+              foreach ($datas as $data) : ?>
+                <div class="card-body">
+                  <h2><?= $data['nama'] ?></h2>
+                  <div class="container float-left" style="width:50%">
+                    <img src="<?= base_url() . 'downloads/sepatu/' . $gambar ?>">
                   </div>
-                  <!-- /.card-body -->
-              </div>
+                  <div class="container float-right" style="width:50%">
+                    <table class="table">
+                      <tr>
+                        <th>Harga</th>
+                        <td>Rp.<?= number_format($data['harga']) ?></td>
+                      </tr>
+                      <tr>
+                        <th>Tipe</th>
+                        <td><?= $data['tipe'] ?></td>
+                      </tr>
+                      <tr>
+                        <th>Gender</th>
+                        <td><?= $data['gender'] ?></td>
+                      </tr>
+                      <tr>
+                        <th>Ukuran</th>
+                        <td><?= $data['ukuran'] ?></td>
+                      </tr>
+                      <tr>
+                        <th>Stok</th>
+                        <td><?= $data['stok'] ?></td>
+                      </tr>
+                      <tr>
+                        <th>Deskripsi</th>
+                        <td><?= $data['deskripsi'] ?></td>
+                      </tr>
+                    </table>
+                  </div>
+                <?php endforeach ?>
+                </div>
+                <!-- /.card-body -->
             </div>
           </div>
         </div>

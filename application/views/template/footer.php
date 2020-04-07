@@ -54,6 +54,8 @@
       $("#navHome").addClass("active");
     } else if (path.match(/user.*/)) {
       $("#navUser").addClass("active");
+    } else if (path.match(/trans.*/)) {
+      $("#navTrans").addClass("active");
     }
 
 

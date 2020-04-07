@@ -80,7 +80,7 @@ to get the desired effect
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?php echo base_url() . 'transaksi' ?>" class="nav-link" id="navPemesanan">
+              <a href="<?php echo base_url() . 'trans' ?>" class="nav-link" id="navTrans">
                 <i class="fas fa-piggy-bank nav-icon"></i>
                 <p>
                   Transaksi

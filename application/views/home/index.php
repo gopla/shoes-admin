@@ -5,7 +5,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0 text-dark">Dashboard</h1>
+          <h1 class="m-0 text-dark"><i class="ion-ios-home"></i> Dashboard</h1>
         </div><!-- /.col -->
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
@@ -29,7 +29,7 @@
               <div class="icon">
                 <i class="ion ion-cash"></i>
               </div>
-              <a href="#" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?= base_url() . 'trans' ?>" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
