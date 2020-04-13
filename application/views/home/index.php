@@ -71,7 +71,7 @@
         <?php foreach ($dataRetail as $data) : ?>
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-secondary">
+            <div class="small-box bg-light">
               <div class="inner">
                 <h3><?= $data['count'] ?></h3>
 
