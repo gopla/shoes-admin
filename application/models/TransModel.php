@@ -48,44 +48,14 @@ class TransModel extends CI_Model
     }
   }
 
-  public function store()
+  public function update($id, $token)
   {
-    $data = [
-      "nama" => $this->input->post('varNama'),
-      "lokasi" => $this->input->post('varAlamat'),
-      "telp" => $this->input->post('varTelp')
-    ];
     try {
-      $res = $this->_client->request('POST', 'retail', [
-        "json" => $data
+      $res = $this->_client->request('PUT', 'transaksi/status/' . $id, [
+        'headers' => [
+          'authorization' => "bearerHeader " . $token
+        ]
       ]);
-      return json_decode($res->getBody()->getContents(), true);
-    } catch (\GuzzleHttp\Exception\ClientException $e) {
-      echo $e->getResponse()->getBody()->getContents();
-    }
-  }
-
-  public function update($id)
-  {
-    $data = [
-      "nama" => $this->input->post('varNama'),
-      "lokasi" => $this->input->post('varAlamat'),
-      "telp" => $this->input->post('varTelp')
-    ];
-    try {
-      $res = $this->_client->request('PUT', 'retail/' . $id, [
-        "json" => $data
-      ]);
-      return json_decode($res->getBody()->getContents(), true);
-    } catch (\GuzzleHttp\Exception\ClientException $e) {
-      echo $e->getResponse()->getBody()->getContents();
-    }
-  }
-
-  public function delete($id)
-  {
-    try {
-      $res = $this->_client->request('DELETE', 'retail/' . $id . ')');
       return json_decode($res->getBody()->getContents(), true);
     } catch (\GuzzleHttp\Exception\ClientException $e) {
       echo $e->getResponse()->getBody()->getContents();

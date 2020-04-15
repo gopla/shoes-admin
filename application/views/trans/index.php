@@ -34,7 +34,8 @@
                         <th>Tanggal</th>
                         <th>Nama</th>
                         <th>Total</th>
-                        <th>Detail</th>
+                        <th>Status Barang</th>
+                        <th>Aksi</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -46,10 +47,26 @@
                           <td><?= $data['User']['nama'] ?></td>
                           <td>Rp. <?= number_format($data['total']) ?></td>
                           <td>
+                            <?php if ($data['status'] == true) : ?>
+                              <h5><span class="badge badge-danger">Belum Diambil</span></h5>
+                            <?php else : ?>
+                              <h5><span class="badge badge-success">Sudah Diambil</span></h5>
+                            <?php endif ?>
+                          </td>
+                          <td>
                             <div class="btn-group">
-                              <a href="<?= base_url() . 'trans/show/' . $data['id_transaksi'] ?>" class="btn btn-primary">
+                              <a href="<?= base_url() . 'trans/show/' . $data['id_transaksi'] ?>" class="btn btn-primary" title="Detail Transaksi">
                                 <i class="fas fa-eye    "></i>
                               </a>
+                              <?php if ($data['status'] == true) : ?>
+                                <a href="<?= base_url() . 'trans/checkout/' . $data['id_transaksi'] ?>" class="btn btn-success" title="Ubah Status Pengambilan">
+                                  <i class="fa fa-check" aria-hidden="true"></i>
+                                </a>
+                              <?php else : ?>
+                                <a href="#" class="btn btn-secondary" title="Barang sudah diambil">
+                                  <i class="fa fa-check" aria-hidden="true"></i>
+                                </a>
+                              <?php endif ?>
                             </div>
                           </td>
                         </tr>

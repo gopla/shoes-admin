@@ -38,6 +38,13 @@ class Trans extends CI_Controller
     $this->load->view('trans/show');
     $this->load->view('template/footer');
   }
+
+  public function checkout($id)
+  {
+    $token = $this->session->userdata('token');
+    $this->TransModel->update($id, $token);
+    redirect('trans');
+  }
 }
     
     /* End of file Trans.php */
