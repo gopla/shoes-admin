@@ -8,6 +8,16 @@
 
   <title><?= $title ?></title>
 
+  <style>
+    .bg {
+      background: #343A40;
+    }
+
+    .login-logo {
+      color: #fff;
+    }
+  </style>
+
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="<?php echo base_url() . 'assets/plugins/fontawesome-free/css/all.min.css' ?>">
 
@@ -21,7 +31,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 
-<body class="hold-transition login-page">
+<body class="hold-transition bg">
   <div class="login-box">
     <div class="login-logo">
       <img src="<?php echo base_url() . 'assets/dist/img/AdminLTELogo.png' ?>">
@@ -59,7 +69,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <button type="submit" class="btn btn-primary btn-block btn-flat">
+              <button type="submit" class="btn btn-dark btn-block btn-flat">
                 <i class="ion ion-log-in"></i>
                 <span>Log In</span>
               </button>

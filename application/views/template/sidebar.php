@@ -12,7 +12,7 @@ to get the desired effect
 <body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed">
   <div class="wrapper">
     <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand navbar-dark navbar-black">
+    <nav class="main-header navbar navbar-expand navbar-dark">
       <!-- Left navbar links -->
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -33,7 +33,7 @@ to get the desired effect
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-light-dark elevation-4">
+    <aside class="main-sidebar sidebar-dark-light elevation-4">
       <!-- Brand Logo -->
       <a href="<?php echo base_url() . 'admin/home' ?>" class="brand-link">
         <img src="<?php echo base_url() . 'assets/dist/img/AdminLTELogo.png' ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
